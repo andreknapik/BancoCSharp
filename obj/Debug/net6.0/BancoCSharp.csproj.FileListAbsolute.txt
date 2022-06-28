@@ -1,0 +1,15 @@
+/home/andre/CSharp/BancoCSharp/bin/Debug/net6.0/BancoCSharp
+/home/andre/CSharp/BancoCSharp/bin/Debug/net6.0/BancoCSharp.deps.json
+/home/andre/CSharp/BancoCSharp/bin/Debug/net6.0/BancoCSharp.runtimeconfig.json
+/home/andre/CSharp/BancoCSharp/bin/Debug/net6.0/BancoCSharp.dll
+/home/andre/CSharp/BancoCSharp/bin/Debug/net6.0/BancoCSharp.pdb
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.csproj.AssemblyReference.cache
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.AssemblyInfoInputs.cache
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.AssemblyInfo.cs
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.csproj.CoreCompileInputs.cache
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.dll
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/refint/BancoCSharp.dll
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.pdb
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/BancoCSharp.genruntimeconfig.cache
+/home/andre/CSharp/BancoCSharp/obj/Debug/net6.0/ref/BancoCSharp.dll
