@@ -10,8 +10,13 @@ Fomos contratados para criar um sistema bancário onde fosse possivel criar as s
 6o Ser possível Efetuar transferencia. OK
 7o Ser possível Consultar Saldo. OK
 8o Não deve ser possível criar uma conta bancaria sem tipo. OK
-9o Cada tipo de conta possa implementar de forma diferente o metodo ImprimirExtrato
+9o Cada tipo de conta possa implementar de forma diferente o metodo ImprimirExtrato OK
 
 
 
-8o Ser possível Visualizar as Movimentações Bancárias.
+10o Ser possível Visualizar as Movimentações Bancárias.
+    10.1 Uma classe que represente a minha movimentação. - OK
+    10.2 Uma lista para armazenar essas movimentações.
+    10.3 Uma forma de saber de forma simples qual o tipo da movimentação.
+    10.4 Um layout para apresentar a movimentação quando for pedida.
+    10.5 Criando uma logica para mostrar o layout.
