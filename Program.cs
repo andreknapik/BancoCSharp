@@ -18,6 +18,8 @@ var titular02 =  new Titular("Maria da Silva","12345678911", "(21)99993-0299", e
 
 var conta01 = new ContaCorrente(titular01, 100.00);
 var conta02 = new ContaInvestimento(titular02);
+var conta03 = new ContaPoupanca(titular02);
+
 
 try
 {
@@ -30,5 +32,12 @@ catch (System.Exception ex)
 
 System.Console.WriteLine("Saldo Conta01: " + conta01.Saldo);
 System.Console.WriteLine("Saldo Conta02: " + conta02.Saldo);
+
+System.Console.WriteLine("Extrato Conta01");
+conta01.ImprimirExtrato();
+System.Console.WriteLine("Extrato Conta02");
+conta02.ImprimirExtrato();
+System.Console.WriteLine("Extrato Conta03");
+conta03.ImprimirExtrato();
 
 System.Console.WriteLine();

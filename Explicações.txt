@@ -9,4 +9,9 @@ Fomos contratados para criar um sistema bancário onde fosse possivel criar as s
 5o Ser possível Efetuar saque. OK
 6o Ser possível Efetuar transferencia. OK
 7o Ser possível Consultar Saldo. OK
+8o Não deve ser possível criar uma conta bancaria sem tipo. OK
+9o Cada tipo de conta possa implementar de forma diferente o metodo ImprimirExtrato
+
+
+
 8o Ser possível Visualizar as Movimentações Bancárias.

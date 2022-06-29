@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace BancoCSharp.Models
 {
-    #region Atributos
-    public class ContaBancaria
+    
+    public abstract class ContaBancaria
     {
+        #region Atributos
         public Titular Titular {get; set;}
         public double Saldo {get; private set;}
         public DateTime DataAbertura {get; private set;}
-
-        private readonly double VALOR_MINIMO = 10.0;
+        protected readonly double VALOR_MINIMO = 10.0;
 
         #endregion
 
@@ -60,6 +60,7 @@ namespace BancoCSharp.Models
         return valor;
     }
         public void Transferir(ContaBancaria contaDestino, double valor)
+
     {
         if(valor < VALOR_MINIMO)
         {
@@ -74,6 +75,7 @@ namespace BancoCSharp.Models
         Saldo -= valor;
     }
 
+        public abstract void ImprimirExtrato();
 
     #endregion
 

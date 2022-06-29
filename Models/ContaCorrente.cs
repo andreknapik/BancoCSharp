@@ -16,5 +16,10 @@ namespace BancoCSharp.Models
         : base(titular, saldoAbertura)
         {
         }
+
+        public override void ImprimirExtrato()
+        {
+            System.Console.WriteLine("Imprimindo extrato da Conta corrente!");
+        }
     }
 }
