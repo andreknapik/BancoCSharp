@@ -25,11 +25,18 @@ namespace BancoCSharp.Models
             Saldo = saldoAbertura;
             DataAbertura = DateTime.Now;
         }
+        public ContaBancaria(Titular titular)
+        {
+            Titular = titular;
+            Saldo = 0;
+            DataAbertura = DateTime.Now;
+        }
+
         #endregion
 
     #region Metodos
 
-    public void Depositar(double valor)
+        public void Depositar(double valor)
     {
         if(valor < VALOR_MINIMO) {
             throw new Exception("O valor mínimo para deposito é R$" + VALOR_MINIMO);
@@ -64,8 +71,8 @@ namespace BancoCSharp.Models
         }
 
         contaDestino.Depositar(valor);
+        Saldo -= valor;
     }
-
 
 
     #endregion

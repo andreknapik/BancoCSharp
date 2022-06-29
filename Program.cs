@@ -14,7 +14,21 @@ var endereco = new Endereco
 };
 
 var titular01 =  new Titular("José da Silva","12345678901", "(21)99993-0239", endereco);
+var titular02 =  new Titular("Maria da Silva","12345678911", "(21)99993-0299", endereco);
 
-var conta01 = new ContaBancaria(titular01, 100.00);
+var conta01 = new ContaCorrente(titular01, 100.00);
+var conta02 = new ContaInvestimento(titular02);
 
-System.Console.WriteLine(conta01.Saldo);
+try
+{
+    conta01.Transferir(conta02, 25.0);
+}
+catch (System.Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
+System.Console.WriteLine("Saldo Conta01: " + conta01.Saldo);
+System.Console.WriteLine("Saldo Conta02: " + conta02.Saldo);
+
+System.Console.WriteLine();

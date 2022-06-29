@@ -2,11 +2,11 @@ Historia do Sistema.
 
 Fomos contratados para criar um sistema bancário onde fosse possivel criar as seguintes questões:
 
-1o Ser Possivel Criar Conta Corrente
-2o Ser Possível Criar Conta Poupança
-3o Ser Possível Criar Conta Investimento
-4o Ser possível Efetuar depósito.
-5o Ser possível Efetuar saque.
-6o Ser possível Efetuar transferencia.
-7o Ser possível Consultar Saldo.
+1o Ser Possivel Criar Conta Corrente OK
+2o Ser Possível Criar Conta Poupança OK
+3o Ser Possível Criar Conta Investimento OK
+4o Ser possível Efetuar depósito. OK
+5o Ser possível Efetuar saque. OK
+6o Ser possível Efetuar transferencia. OK
+7o Ser possível Consultar Saldo. OK
 8o Ser possível Visualizar as Movimentações Bancárias.
