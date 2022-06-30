@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BancoCSharp.Enums;
 
 namespace BancoCSharp.Models
 {
@@ -12,6 +13,7 @@ namespace BancoCSharp.Models
         public Titular Titular {get; set;}
         public double Saldo {get; private set;}
         public DateTime DataAbertura {get; private set;}
+        protected List<Movimentacao> Movimentacoes {get; set;}
         protected readonly double VALOR_MINIMO = 10.0;
 
         #endregion
@@ -24,12 +26,22 @@ namespace BancoCSharp.Models
             Titular = titular;
             Saldo = saldoAbertura;
             DataAbertura = DateTime.Now;
+
+            Movimentacoes = new List<Movimentacao>()
+            {
+                new Movimentacao(TipoMovimentacao.ABERTURA_CONTA, saldoAbertura)
+            };
         }
+
         public ContaBancaria(Titular titular)
         {
             Titular = titular;
             Saldo = 0;
             DataAbertura = DateTime.Now;
+            Movimentacoes = new List<Movimentacao>()
+            {
+                new Movimentacao(TipoMovimentacao.ABERTURA_CONTA, Saldo)
+            };
         }
 
         #endregion
@@ -43,6 +55,8 @@ namespace BancoCSharp.Models
         }
 
         Saldo += valor;
+        Movimentacoes.Add(new Movimentacao(TipoMovimentacao.DEPOSITO______, valor));
+        
     }
         public double Sacar(double valor)
     {
@@ -56,6 +70,8 @@ namespace BancoCSharp.Models
         }
 
         Saldo -= valor;
+
+        Movimentacoes.Add(new Movimentacao(TipoMovimentacao.SAQUE_________, valor));
 
         return valor;
     }
@@ -73,9 +89,15 @@ namespace BancoCSharp.Models
 
         contaDestino.Depositar(valor);
         Saldo -= valor;
+
+        Movimentacoes.Add(new Movimentacao(TipoMovimentacao.TRANSFERENCIA_, valor));
+
     }
 
         public abstract void ImprimirExtrato();
+
+
+
 
     #endregion
 

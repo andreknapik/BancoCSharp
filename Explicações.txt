@@ -14,9 +14,9 @@ Fomos contratados para criar um sistema bancário onde fosse possivel criar as s
 
 
 
-10o Ser possível Visualizar as Movimentações Bancárias.
+10o Ser possível Visualizar as Movimentações Bancárias.- OK
     10.1 Uma classe que represente a minha movimentação. - OK
-    10.2 Uma lista para armazenar essas movimentações.
-    10.3 Uma forma de saber de forma simples qual o tipo da movimentação.
-    10.4 Um layout para apresentar a movimentação quando for pedida.
-    10.5 Criando uma logica para mostrar o layout.
+    10.2 Uma lista para armazenar essas movimentações. - OK
+    10.3 Uma forma de saber de forma simples qual o tipo da movimentação. - OK
+    10.4 Um layout para apresentar a movimentação quando for pedida. - OK
+    10.5 Criando uma logica para mostrar o layout. - OK
